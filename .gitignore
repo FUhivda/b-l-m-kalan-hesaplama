@@ -1,23 +1,20 @@
-# Compiled class file
-*.class
+import java.util.Scanner;
+public class bolumVeKalanHesaplama {
+    public static void main(String[] args) {
 
-# Log file
-*.log
+        Scanner input=new Scanner(System.in);
 
-# BlueJ files
-*.ctxt
+        System.out.print("Bölünen Sayıyı Giriniz: ");
+        int bolunen= input.nextInt();
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+        System.out.print("Bölen Sayiyi Giriniz: ");
+        int bolen= input.nextInt();
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+        int bolum= bolunen / bolen;
+        int kalan= bolunen % bolen;
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+        System.out.println("Bölüm: " +bolum);
+        System.out.println("Kalan: " +kalan);
+
+    }
+}
